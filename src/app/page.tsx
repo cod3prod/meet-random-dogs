@@ -1,5 +1,7 @@
+import Container from "@/components/container";
+
 export default function Page() {
   return (
-    <div>Page</div>
+    <Container />
   )
 }
