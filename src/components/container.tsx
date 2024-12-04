@@ -4,12 +4,11 @@ import { useCallback, useMemo, useState } from "react";
 import Modal from "./modal";
 import { DogAPIResponse, DogImage } from "@/types/api";
 import Door from "./door";
-import useFetch from "@/hooks/useFetch";
+import useFetch from "@/hooks/use-fetch";
 import Loader from "./loader";
 import Error from "./error";
 
 export default function Container() {
-  // const [dogImgs, setDogImgs] = useState<DogImage[]>([]);
   const [isModalActive, setIsModalActive] = useState(false);
   const [curImgIdx, setCurImgIdx] = useState<number | null>(null);
 
