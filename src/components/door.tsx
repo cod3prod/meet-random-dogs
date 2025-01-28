@@ -8,7 +8,7 @@ export default function Door({
   return (
     <div
       key={index}
-      className="w-20 h-[84px] m-1 z-10 bg-[#555] border-[3px] hover:bg-black border-[#fff] transform skew-x-[-14deg] hover:scale-125 overflow-hidden transition-transform duration-100 bg-transition duration-600 cursor-pointer"
+      className="w-20 h-[84px] m-1 z-10 bg-[#555] border-[3px] hover:bg-black border-[#fff] transform skew-x-[-14deg] hover:scale-125 overflow-hidden transition-transform duration-300 bg-transition cursor-pointer"
     >
       <div
         onClick={() => {

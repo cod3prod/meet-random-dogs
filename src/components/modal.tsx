@@ -23,7 +23,7 @@ export default function Modal({
   return (
     <div
       className={twMerge(
-        "fixed inset-0 z-20 w-full h-full bg-black bg-opacity-50",
+        "fixed inset-0 z-20 w-full h-full bg-black/50",
         onActive ? "flex flex-col justify-start items-center" : "hidden"
       )}
     >
@@ -52,7 +52,7 @@ export default function Modal({
               alt="dog"
               fill
               className={twMerge(
-                "object-cover rounded-lg shadow-lg",
+                "p-4 object-cover",
                 isLoading ? "opacity-0" : "opacity-100"
               )}
               onLoad={() => setIsLoading(false)}

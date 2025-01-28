@@ -36,7 +36,7 @@ export default function Container() {
   const Doors = useMemo(() => {
     return Array(32)
       .fill(null)
-      .map((el, idx) => <Door key={idx} index={idx} openModal={openModal} />);
+      .map((_, idx) => <Door key={idx} index={idx} openModal={openModal} />);
   }, []);
 
   return (
